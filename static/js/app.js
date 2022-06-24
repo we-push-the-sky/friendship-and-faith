@@ -1,6 +1,6 @@
 
 function togglePlay() {
-	var video = document.querySelector("video");
+	var video = document.querySelector("#video-player");
 	var toggleBtn = document.querySelector("#play-pause");
 	if (video.paused) {
 	   video.play();
@@ -22,9 +22,9 @@ function isInView(domRef) {
 }
 
 function playMedia() {
-	var video = document.querySelector("video");
+	var video = document.querySelector("#video-player");
 	var toggleBtn = document.querySelector("#play-pause");
-	var audio = document.querySelector("audio");
+	var audio = document.querySelector("#audio-player");
 	//play video when el in view
 	if(isInView('#video')){
 		video.play();
@@ -44,7 +44,7 @@ function playMedia() {
 }
 
 function playAudio() {
-	var audio = document.querySelector("audio");
+	var audio = document.querySelector("#audio-player");
 	//var toggleBtn = document.querySelector("#play-pause");
 	//play video when el in view
 	if(isInView('#audio')){
