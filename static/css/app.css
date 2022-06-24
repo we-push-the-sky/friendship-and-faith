@@ -1,0 +1,80 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: black;
+	color: white;
+}
+h1 {
+	font-size: 20px;
+}
+video {
+	background-color: black;
+}
+.banner-img {
+	display:block;
+	margin: auto;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth;
+  /* hide scrollbar */
+  -webkit-overflow-scrolling: touch;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > section {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  margin-right: 50px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  width:100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slides > section:target {
+/*   transform: scale(0.8); */
+}
+
+img[usemap] {
+	border: none;
+	height: auto;
+	width: 100%;
+	max-width: 855px;
+}
+.input-form {
+	display: none;
+}
+.input-form.show {
+	display: block;
+}
+.display-input {
+	color: white;
+}
