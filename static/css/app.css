@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Indie Flower', sans-serif;
 	background-color: black;
 	color: white;
 }
@@ -80,4 +82,5 @@ img[usemap] {
 }
 .display-input {
 	color: white;
+	font-size: 22px;
 }
