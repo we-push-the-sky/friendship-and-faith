@@ -54,39 +54,11 @@ function playAudio() {
 		audio.pause();
 		//toggleBtn.innerHTML = "Play";
 	}
+}{
+
 }
 
 $(document).ready(function(e) {
-	$('img[usemap]').rwdImageMaps();
-	var inputForm = document.querySelector(".input-form");
-	var submitBtn = document.querySelector("#submit-btn");
-	var template = document.querySelector('#user-input-display');
-	
-	$('area').on('click', function(e) {
-		e.preventDefault();
-		var coords = e.currentTarget.coords.split(',');
-		console.log(e.target, e.currentTarget, e)
-		inputForm.style.position = 'absolute';
-		// +25 is xoffsett and -21 is y offset 
-		inputForm.style.left = Number(coords[0])+25+'px';
-		inputForm.style.top = Number(coords[3])-21+'px';
-		$(inputForm).toggleClass('show');
-		//alert($(this).attr('alt') + ' clicked');
-	});
-
-	$('#submit-btn').on('click', function(e){
-		e.preventDefault();
-		var clone = template.content.cloneNode(true);
-		var clonedDiv = clone.querySelector("span");
-
-		var inputVal = document.querySelector("input").value;
-		console.log("submitted", inputVal, inputForm);
-		clonedDiv.textContent = inputVal;
-		clonedDiv.style = inputForm.getAttribute('style');
-		document.body.appendChild(clone);
-		document.querySelector("input").value = "";
-		$(inputForm).toggleClass('show');
-	});
 
 	timeoutID = setTimeout(() => {
 		playMedia();
