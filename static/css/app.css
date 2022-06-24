@@ -9,6 +9,9 @@ h1 {
 video {
 	background-color: black;
 }
+iframe {
+	max-width: 855px;
+}
 .banner-img {
 	display:block;
 	margin: auto;
