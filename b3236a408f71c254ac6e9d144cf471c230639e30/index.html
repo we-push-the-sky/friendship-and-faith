@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>We push the sky</title>
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
+	<script src="static/js/lib/ios-orientationchange-fix.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/app.css">
+
+
+
+	<link rel="apple-touch-icon" sizes="152x152" href="static/media/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/media/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/media/favicons/favicon-16x16.png">
+	<link rel="manifest" href="static/media/favicons/webmanifest.json">
+	<link rel="mask-icon" href="static/media/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#000000">
+
+</head>
+
+<body>
+	<section class="slides" onscroll="playMedia()">
+
+		<section id="banner">
+			<img class="banner-img" src="static/media/banner.webp" alt="banner" />
+		</section>
+
+		<section id="video">
+			<video id="video-player" autoplay loop poster="static/media/vid-poster.png">
+			    <source src="static/media/video.mp4"
+			            type="video/mp4">
+
+			    Sorry, your browser doesn't support embedded videos.
+			</video>
+			<button id="play-pause" onclick="togglePlay()">Play</button>
+		</section>
+
+		<section id="audio">
+			<audio id="audio-player" controls>
+				<source src="static/media/audio.mp3" type="audio/mp3">
+				Sorry, your browser doesn't support embedded audios.
+			</audio>
+		</section>
+
+		<section id="interactive-img">
+			<iframe width="100%" height="100%" frameBorder="0" scrolling="no" src="./interaction.html"></iframe>
+
+		</section>
+
+		<section id="record">
+			<img src="static/media/91c38a_6ecd823227914975860e8bada2acfff3~mv2.webp" width="882" height="548">
+			
+		</section>
+
+	</section>
+
+	
+
+<script src="static/js/app.js"></script>
+</body>
+</html>
