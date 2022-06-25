@@ -26,9 +26,17 @@
 
 		<section id="banner">
 			<img class="banner-img" src="static/media/banner.webp" alt="banner" />
+
+			<a href="#video">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
+			
 		</section>
 
 		<section id="video">
+			<a href="#banner">
+				<img class="left-icon" src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll left button">
+			</a>
 			<video id="video-player" autoplay loop poster="static/media/vid-poster.png">
 			    <source src="static/media/video.mp4"
 			            type="video/mp4">
@@ -36,22 +44,47 @@
 			    Sorry, your browser doesn't support embedded videos.
 			</video>
 			<button id="play-pause" onclick="togglePlay()">Play</button>
+
+			<a href="#audio">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
 		</section>
 
 		<section id="audio">
+			<a href="#video">
+				<img class="left-icon" src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll left button">
+			</a>
+
 			<audio id="audio-player" controls>
 				<source src="static/media/audio.mp3" type="audio/mp3">
 				Sorry, your browser doesn't support embedded audios.
 			</audio>
+
+			<a href="#interactive-img">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
 		</section>
 
 		<section id="interactive-img">
+			<a href="#audio">
+				<img class="left-icon" src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll left button">
+			</a>
+
 			<iframe width="100%" height="100%" frameBorder="0" scrolling="no" src="./interaction.html"></iframe>
 
+			<a href="#record">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
 		</section>
 
 		<section id="record">
-			<img src="static/media/91c38a_6ecd823227914975860e8bada2acfff3~mv2.webp" width="882" height="548">
+			<a href="#interactive-img">
+				<img class="left-icon" src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll left button">
+			</a>
+
+			<img alt="Do you have a friendship that grew out of staying curious about your differences? what would you like to tell us about them?" 
+			src="static/media/91c38a_6ecd823227914975860e8bada2acfff3~mv2.webp" 
+			width="882" height="548">
 			
 		</section>
 
@@ -60,5 +93,8 @@
 	
 
 <script src="static/js/app.js"></script>
+
+<span class="icon-credits"><a  target="_blank" href="https://icons8.com/icon/85789/chevron-right">Chevron Right</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></span>
+
 </body>
 </html>

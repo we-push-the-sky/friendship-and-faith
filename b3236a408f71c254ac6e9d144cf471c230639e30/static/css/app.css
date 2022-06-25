@@ -8,11 +8,12 @@ body {
 h1 {
 	font-size: 20px;
 }
-video {
-	background-color: black;
+video, audio {
+  margin: auto;
 }
 iframe {
 	max-width: 855px;
+  margin: auto;
 }
 .banner-img {
 	display:block;
@@ -83,4 +84,14 @@ img[usemap] {
 .display-input {
 	color: white;
 	font-size: 22px;
+}
+.left-icon {
+  rotate: 180deg;
+}
+
+#record img {
+  margin: auto;
+}
+.icon-credits {
+  opacity: 0;
 }
