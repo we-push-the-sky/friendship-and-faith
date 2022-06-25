@@ -9,7 +9,8 @@ h1 {
 	font-size: 20px;
 }
 video, audio {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 iframe {
 	max-width: 855px;
@@ -17,7 +18,8 @@ iframe {
 }
 .banner-img {
 	display:block;
-	margin: auto;
+	margin-left: auto;
+  margin-right: auto;
 }
 
 .slides {
@@ -72,8 +74,8 @@ iframe {
 img[usemap] {
 	border: none;
 	height: auto;
-	width: 100%;
-	max-width: 855px;
+	width: auto;
+	max-width: 100%;
 }
 .input-form {
 	display: none;
@@ -83,9 +85,19 @@ img[usemap] {
 }
 .display-input {
 	color: white;
-	font-size: 22px;
+	font-size: 15px;
 }
 
+input[type=text] {
+  font-family: 'Indie Flower', sans-serif;
+  background-color: #000;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+}
 
 #record img {
   margin: auto;
