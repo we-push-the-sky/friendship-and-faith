@@ -77,12 +77,12 @@ img[usemap] {
 	width: auto;
 	max-width: 100%;
 }
-.input-form {
+/*.input-form {
 	display: none;
 }
 .input-form.show {
 	display: block;
-}
+}*/
 .display-input {
 	color: white;
 	font-size: 15px;
