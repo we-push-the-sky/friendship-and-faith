@@ -12,7 +12,7 @@ video, audio {
   margin-left: auto;
   margin-right: auto;
 }
-iframe {
+#interactive-img iframe {
 	max-width: 855px;
   margin: auto;
 }
@@ -106,8 +106,12 @@ input[type=text] {
   text-align: center;
 }
 
-#record img {
-  margin: auto;
+#record .art {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 .icon-credits {
   opacity: 0;
