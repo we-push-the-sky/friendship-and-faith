@@ -83,6 +83,13 @@ img[usemap] {
 .input-form.show {
 	display: block;
 }*/
+
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
 .display-input {
 	color: white;
 	font-size: 15px;
