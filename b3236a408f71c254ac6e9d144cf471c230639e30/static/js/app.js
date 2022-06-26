@@ -1,13 +1,13 @@
 
 function togglePlay() {
 	var video = document.querySelector("#video-player");
-	var toggleBtn = document.querySelector("#play-pause");
+
 	if (video.paused) {
 	   video.play();
-	   toggleBtn.innerHTML = "Pause";
+
 	 } else {
 	   video.pause();
-	   toggleBtn.innerHTML = "Play";
+
 	 }
 }
 
@@ -23,7 +23,7 @@ function isInView(domRef) {
 
 function sliderSlided() {
 	var video = document.querySelector("#video-player");
-	var toggleBtn = document.querySelector("#play-pause");
+
 	var audio = document.querySelector("#audio-player");
 	var interactiveEmbed = document.querySelector('iframe');
 	var bannerImg = document.querySelector('#banner .banner-img');
@@ -37,10 +37,10 @@ function sliderSlided() {
 	if(isInView('#video')){
 		video.scrollIntoView(scrollOptions);
 		video.play();
-		toggleBtn.innerHTML = "Pause";
+
 	} else {
 		video.pause();
-		toggleBtn.innerHTML = "Play";
+
 	}
 
 	if(isInView('#audio')){
