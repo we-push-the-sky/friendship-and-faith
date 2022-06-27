@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+@media (orientation: portrait) {
+  #portrait-mode {
+    display: block;
+  }
+  #slides-wrap {
+    opacity: 0;
+  }
+}
+
+@media (orientation: landscape) {
+  #slides-wrap {
+    opacity: 1;
+  }
+  #portrait-mode {
+    display: none;
+  }
+}
+
 body {
 	font-family: 'Indie Flower', sans-serif;
 	background-color: black;

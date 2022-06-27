@@ -85,6 +85,11 @@ function playAudio() {
 }
 
 window.addEventListener('load', function() {
+
+	screen.addEventListener("orientationchange", function () {
+		screen.lockOrientation('landscape');
+	  	console.log("The orientation of the screen is: " + screen.orientation);
+	});
 	var sliderWrapper = document.querySelector('#slides-wrap')
 	sliderWrapper.onscroll = _.debounce(sliderSlided, 100, false);
 
