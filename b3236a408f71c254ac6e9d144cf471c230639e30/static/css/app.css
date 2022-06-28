@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@media (orientation: portrait) {
+  #portrait-mode {
+    display: block;
+  }
+  #slides-wrap {
+    opacity: 0;
+  }
+}
+
+@media (orientation: landscape) {
+  #slides-wrap {
+    opacity: 1;
+  }
+  #portrait-mode {
+    display: none;
+  }
+}
+
+body {
+	font-family: 'Indie Flower', sans-serif;
+	background-color: black;
+	color: white;
+}
+h1 {
+	font-size: 20px;
+}
+video {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 100%;
+}
+audio {
+  margin-left: auto;
+  margin-right: auto;
+}
+#interactive-img iframe {
+	max-width: 855px;
+  margin: auto;
+}
+.banner-img {
+	display:block;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth;
+  /* hide scrollbar */
+  -webkit-overflow-scrolling: touch;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > section {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  margin-right: 50px;
+  border-radius: 10px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  width:100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slides > section:target {
+/*   transform: scale(0.8); */
+}
+
+img[usemap] {
+	border: none;
+	height: auto;
+	width: auto;
+	max-width: 100%;
+}
+/*.input-form {
+	display: none;
+}
+.input-form.show {
+	display: block;
+}*/
+
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+.display-input {
+	color: white;
+	font-size: 15px;
+}
+
+input[type=text] {
+  font-family: 'Indie Flower', sans-serif;
+  background-color: #000;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+#record .art {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.icon-credits {
+  opacity: 0;
+}

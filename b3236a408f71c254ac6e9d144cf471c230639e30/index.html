@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>We push the sky</title>
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="static/js/lib/ios-orientationchange-fix.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/app.css">
+
+
+
+	<link rel="apple-touch-icon" sizes="152x152" href="static/media/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/media/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/media/favicons/favicon-16x16.png">
+	<link rel="manifest" href="manifest.webmanifest">
+	<link rel="mask-icon" href="static/media/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#000000">
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.css">       
+
+	 <style type="text/css">
+	 .op-controls .op-controls__progress--played, .op-controls .op-controls__volume--display {
+	 	color: #338afc;
+	 }
+	 </style>
+</head>
+
+<body>
+	
+	<section id="portrait-mode">
+		<p>This show is better experienced in Landscape mode.</p>
+		<p>Please tilt your device horizontally.</p>
+
+	</section>
+	<section id="slides-wrap" class="slides">
+		
+
+
+		<section id="video">
+			<a href="#banner">
+				<img class="left-icon" src="static/media/icons8-chevron-left-96.png" width="48" alt="scroll left button">
+			</a>
+			<video id="video-player" autoplay muted controls poster="static/media/vid-poster.png">
+			    <source src="static/media/video.mp4"
+			            type="video/mp4">
+
+			    Sorry, your browser doesn't support embedded videos.
+			</video>
+			<!--button id="play-pause" onclick="togglePlay()">Play</button-->
+
+			<a href="#audio">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
+		</section>
+
+		<section id="audio" style="display:initial; margin-top:200px;">
+			<a href="#video">
+				<img class="left-icon" src="static/media/icons8-chevron-left-96.png" width="48" alt="scroll left button">
+			</a>
+			<a href="#interactive-img" style="float: right;">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
+			<div style="width:75%; margin: auto;">
+				<audio id="audio-player" class="op-player op-player__media" controls >
+					<source src="static/media/Nisha_Abdulla_Edit1_April15.wav" type="audio/mp3">
+					Sorry, your browser doesn't support embedded audios.
+				</audio>
+			</div>
+
+
+			
+		</section>
+
+		<section id="interactive-img">
+			<a href="#audio">
+				<img class="left-icon" src="static/media/icons8-chevron-left-96.png" width="48" alt="scroll left button">
+			</a>
+
+			<iframe width="100%" height="100%" frameBorder="0" scrolling="no" src="./interaction.html"></iframe>
+
+			<a href="#record">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
+		</section>
+
+		<section id="record">
+			<a href="#interactive-img">
+				<img class="left-icon" src="static/media/icons8-chevron-left-96.png" width="48" alt="scroll left button">
+			</a>
+
+			<img class="art" alt="Do you have a friendship that grew out of staying curious about your differences? what would you like to tell us about them?" 
+			src="static/media/91c38a_6ecd823227914975860e8bada-1.webp" 
+			>
+
+			<iframe src="https://www.speakpipe.com/widget/inline/au6m7kzsmyx7jqsnypp1ka5hvonyqf3e" allow="microphone" width="300" height="200" frameborder="0" style="margin-right:25px;"></iframe>
+
+			<a href="#credits-1">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
+			
+		</section>
+
+		<section id="credits-1">
+			<a href="#record">
+				<img class="left-icon" src="static/media/icons8-chevron-left-96.png" width="48" alt="scroll left button">
+			</a>
+
+			<img src="static/media/Wepushthesky_Credits_1.webp" alt="credits">
+
+			<a href="#credits-2">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
+		</section>
+
+		<section id="credits-2">
+			<a href="#credits-1">
+				<img class="left-icon" src="static/media/icons8-chevron-left-96.png" width="48" alt="scroll left button">
+			</a>
+
+			<img src="static/media/Wepushthesky_Credits2.webp" alt="credits">
+
+			<a href="#end">
+				<img src="static/media/icons8-chevron-right-96.png" width="48" alt="scroll right button">
+			</a>
+		</section>
+
+		<section id="end">
+			<a href="#credits-2">
+				<img class="left-icon" src="static/media/icons8-chevron-left-96.png" width="48" alt="scroll left button">
+			</a>
+
+			<img src="static/media/Wepushthesky_End.webp" alt="The End">
+		</section>
+
+	</section>
+
+	
+	<script src= 
+	"https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js">
+	    </script>
+
+	<script src="https://cdn.jsdelivr.net/npm/openplayerjs@latest/dist/openplayer.min.js"></script>
+	<script src="static/js/app.js"></script>
+
+<script>
+	/*let deferredPrompt;
+	const addBtn = document.querySelector('.add-button');
+	addBtn.style.display = 'none';
+
+	window.addEventListener('beforeinstallprompt', (e) => {
+	  // Prevent Chrome 67 and earlier from automatically showing the prompt
+	  //e.preventDefault();
+	  // Stash the event so it can be triggered later.
+	  deferredPrompt = e;
+	  // Update UI to notify the user they can add to home screen
+	  addBtn.style.display = 'block';
+
+	  addBtn.addEventListener('click', (e) => {
+	    // hide our user interface that shows our A2HS button
+	    addBtn.style.display = 'none';
+	    // Show the prompt
+	    deferredPrompt.prompt();
+	    // Wait for the user to respond to the prompt
+	    deferredPrompt.userChoice.then((choiceResult) => {
+	        if (choiceResult.outcome === 'accepted') {
+	          console.log('User accepted the A2HS prompt');
+	        } else {
+	          console.log('User dismissed the A2HS prompt');
+	        }
+	        deferredPrompt = null;
+	      });
+	  });
+	});
+
+*/
+    if ('serviceWorker' in navigator) {
+      // Register a service worker hosted at the root of the
+      // site using the default scope.
+      navigator.serviceWorker.register('./service-worker.js').then(function(registration) {
+        console.log('Service worker registration succeeded:', registration);
+      }, /*catch*/ function(error) {
+        console.log('Service worker registration failed:', error);
+      });
+    } else {
+      console.log('Service workers are not supported.');
+    }
+
+
+  </script>
+
+<span class="icon-credits"><a  target="_blank" href="https://icons8.com/icon/85789/chevron-right">Chevron Right</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></span>
+
+</body>
+</html>
