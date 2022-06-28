@@ -1,3 +1,4 @@
+
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('we-push-the-sky').then((cache) => cache.addAll([
@@ -5,6 +6,7 @@ self.addEventListener('install', (e) => {
       './index.html',
       './interaction.html',
       './static/css/app.css',
+<<<<<<< HEAD
       './static/js/app.js',
       './static/js/lib/jquery1.10.2.min.js',
       './static/js/lib/jquery.rwdImageMaps.min.js',

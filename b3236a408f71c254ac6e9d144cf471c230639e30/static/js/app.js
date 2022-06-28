@@ -41,6 +41,7 @@ function sliderSlided() {
 
 	if(isInView('#audio')){
 		audio.scrollIntoView(scrollOptions);
+
 		audioPlayer.play();
 	} else {
 		audioPlayer.pause();
@@ -64,6 +65,7 @@ function throttle(fn, wait) {
 }
 
 function playAudio() {
+
 	const audioPlayer = OpenPlayerJS.instances['audio-player']; 
 	//play video when el in view
 	if(isInView('#audio')){
@@ -92,4 +94,5 @@ window.addEventListener('load', function() {
 		mode: 'responsive',
 	});
 	audioPlayer.init();
+
 });
