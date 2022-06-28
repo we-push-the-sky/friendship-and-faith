@@ -57,7 +57,6 @@
 		$('area').on('click', function(e) {
 			e.preventDefault();
 			var inputClone = createInputField(e.currentTarget.alt);
-<<<<<<< HEAD
 			if(!document.querySelector("#form"+e.currentTarget.alt)){
 				document.body.append(inputClone);
 				var inputForm = document.querySelector("#form"+e.currentTarget.alt);
@@ -69,16 +68,6 @@
 				$(inputForm).toggleClass('show');
 			}
 			
-=======
-			document.body.append(inputClone);
-			var inputForm = document.querySelector("#form"+e.currentTarget.alt);
-			var coords = e.currentTarget.coords.split(',');
-			inputForm.style.position = 'absolute';
-			// constant nos offsett to align the input form
-			inputForm.style.left = Number(coords[0])+11+'px';
-			inputForm.style.top = Number(coords[3])-40+'px';
-			$(inputForm).toggleClass('show');
->>>>>>> d3ae4928489d309152f8ee4b868fd26b9290ab2f
 
 		});
 
