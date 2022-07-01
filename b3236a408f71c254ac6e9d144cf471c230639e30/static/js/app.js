@@ -27,6 +27,8 @@ function sliderSlided() {
 	var audio = document.querySelector("#audio-player");
 	var interactiveEmbed = document.querySelector('iframe');
 	var bannerImg = document.querySelector('#banner .banner-img');
+	var credits1 = document.querySelector('#credits-1');
+	var credits2 = document.querySelector('#credits-2');
 	var scrollOptions = {behavior: "smooth", block: "center", inline: "center"}
 
 	//play video when el in view
@@ -41,7 +43,6 @@ function sliderSlided() {
 
 	if(isInView('#audio')){
 		audio.scrollIntoView(scrollOptions);
-
 		audioPlayer.play();
 	} else {
 		audioPlayer.pause();
@@ -51,6 +52,12 @@ function sliderSlided() {
 		interactiveEmbed.scrollIntoView();
 	}
 
+	if(isInView('#credits-1')){
+		credits1.scrollIntoView();
+	}
+	if(isInView('#credits-2')){
+		credits2.scrollIntoView();
+	}
 		
 }
 

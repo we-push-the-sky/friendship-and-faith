@@ -6,7 +6,6 @@ self.addEventListener('install', (e) => {
       './index.html',
       './interaction.html',
       './static/css/app.css',
-<<<<<<< HEAD
       './static/js/app.js',
       './static/js/lib/jquery1.10.2.min.js',
       './static/js/lib/jquery.rwdImageMaps.min.js',
@@ -16,7 +15,7 @@ self.addEventListener('install', (e) => {
       './static/media/icons8-chevron-left-96.png',
       './static/media/video.mp4',
       './static/media/vid-poster.png',
-      './static/media/audio.mp3',
+      './static/media/Nisha_Abdulla_Edit1_April15-192k.mp3',
       './static/media/91c38a_6ecd823227914975860e8bada-1.webp'
     ])),
   );
