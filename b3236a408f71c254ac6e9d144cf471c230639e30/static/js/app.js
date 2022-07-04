@@ -58,6 +58,10 @@ function sliderSlided() {
 	if(isInView('#credits-2')){
 		credits2.scrollIntoView();
 	}
+
+	if(isInView('#testimonials')){
+		initGsheet();
+	}
 		
 }
 
