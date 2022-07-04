@@ -82,14 +82,37 @@ function playAudio() {
 		audioPlayer.pause();
 		//toggleBtn.innerHTML = "Play";
 	}
-}{
+}
 
+function sendTxtMsg(event) {
+	event.preventDefault();
+	const targetEl = event.target;
+	const formData = new FormData(targetEl);
+
+	fetch(targetEl.action, {
+		method: 'post',
+		body: formData
+	})
+	.then((responseJson) => {
+	  // Do something with the response
+	  console.log("success", responseJson);
+	  if(responseJson.status === 200) {
+	  	targetEl.reset();
+	  	alert("Your message is sent successfully.")
+	  }
+	})
+	.catch((error) => {
+	  console.log("error", error);
+	});
+	console.log(event, event.currentTarget, "https://script.google.com/macros/s/AKfycbydCmLuN9zUeT0aele2QkO8CsnOqxHL8674P374cHFqzlAA9qWf5-80B10c-4mIL8oOvQ/exec");
 }
 
 window.addEventListener('load', function() {
-
 	var sliderWrapper = document.querySelector('#slides-wrap')
 	sliderWrapper.onscroll = _.debounce(sliderSlided, 100, false);
+	var msgForm = document.querySelector('#txt-msg');
+	msgForm.addEventListener('submit', sendTxtMsg);
+
 
 	timeoutID = setTimeout(() => {
 		sliderSlided();
