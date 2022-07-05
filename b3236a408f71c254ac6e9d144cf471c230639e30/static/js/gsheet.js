@@ -21,7 +21,6 @@ function initGsheet() {
             data.length = 0;
             //Remove additional text and extract only JSON:
             const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-            console.log(jsonData)
             const colz = [];
             const tr = document.createElement('div');
             //Extract column labels
@@ -35,12 +34,10 @@ function initGsheet() {
                     //tr.appendChild(th);
                 }
             });
-            console.log(jsonData, "after")
             //output.appendChild(tr);
  
             //extract row data:
             jsonData.table.rows.forEach((rowData) => {
-                console.log(rowData, colz, "rowData")
                 const row = {};
                 colz.forEach((ele, ind) => {
                     if(ind+2 != 3){
@@ -48,8 +45,7 @@ function initGsheet() {
                     } else {
                         row[ele] = (rowData.c[ind] != null) ? rowData.c[ind+2].f : '';  
                     }
-                    
-                    console.log(row[ele], ind)
+                  
                 })
                 data.push(row);
             });
@@ -69,7 +65,6 @@ function processRows(json) {
         const keys = Object.keys(row);
      
         keys.forEach((key) => {
-            console.log(row, key)
             const td = document.createElement('div');
             td.textContent = row[key];
             tr.appendChild(td);
