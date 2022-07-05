@@ -60,7 +60,8 @@ function sliderSlided() {
 	}
 
 	if(isInView('#testimonials')){
-		initGsheet();
+		//initGsheet();
+		_.debounce(initGsheet(), 1000, false);
 	}
 		
 }
