@@ -1,6 +1,6 @@
 const sheetId = '13OVk5vl9lJc7rcna-Vym-Xzh8mMYNGkGC81F2XmfGF8';
 const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
-const sheetName = 'user-data';
+const sheetName = 'Sheet1';
 const query = encodeURIComponent('Select *')
 const url = `${base}&sheet=${sheetName}&tq=${query}`
  

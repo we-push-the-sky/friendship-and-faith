@@ -63,6 +63,10 @@ function sliderSlided() {
 		//initGsheet();
 		_.debounce(initGsheet(), 1000, false);
 	}
+
+	if(isInView('#audio-testimonials')) {
+		_.debounce(initAudioGsheet(), 1000, false);
+	}
 		
 }
 
