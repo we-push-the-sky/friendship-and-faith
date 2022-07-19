@@ -120,9 +120,33 @@ div.horizontal {
 /*   transform: scale(0.8); */
 }
 
+@media (orientation: portrait) {
+  #portrait-mode {
+    display: block;
+  }
+  #slides-wrap {
+    opacity: 0;
+  }
+}
+
+@media (orientation: landscape) {
+  #slides-wrap {
+    opacity: 1;
+  }
+  #portrait-mode {
+    display: none;
+  }
+}
+
 </style>
 
 <body>
+
+	<section id="portrait-mode">
+		<p>This show is better experienced in Landscape mode.</p>
+		<p>Please tilt your device horizontally.</p>
+
+	</section>
 
 	<section id="slides-wrap" class="slides">
 		<section id="banner">
