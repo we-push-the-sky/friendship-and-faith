@@ -49,7 +49,7 @@ function sliderSlided() {
 	}
 
 	if(isInView('#interactive-img')){
-		interactiveEmbed.scrollIntoView();
+		interactiveEmbed.scrollIntoView(scrollOptions);
 	}
 
 	if(isInView('#credits-1')){
@@ -60,7 +60,7 @@ function sliderSlided() {
 	}
 
 	if(isInView('#testimonials')){
-		//initGsheet();
+		
 		_.debounce(initGsheet(), 1000, false);
 	}
 
