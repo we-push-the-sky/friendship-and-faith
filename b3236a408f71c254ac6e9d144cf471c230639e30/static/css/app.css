@@ -156,13 +156,23 @@ textarea {
 }
 
 #txt-msg input[type=submit] {
-  background-color: #338bfe;
-  border-color: #387ad0;
-  border-radius: 5px;
+  width: 75px;
+  margin: auto;
+  margin-top: auto;
+  margin-top: auto;
   padding: 5px;
+  background-color: #1f54a0;
+  border-color: #2176f1;
+  border-radius: 5px;
   color: white;
+  font-family: inherit;
+  margin-top: 15px;
 }
 
+#txt-msg input[type=submit]:hover {
+  background-color: #2666bba1;
+  cursor: pointer;
+}
 #testimonials h2,
 #audio-testimonials h2 {
   text-align: center;
