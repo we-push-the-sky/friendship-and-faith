@@ -18,10 +18,44 @@ body {
 
 .box {
 
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); 
+	border-radius: 3px; 
 	padding: 12px;
+	display: grid;
 }
+
+.box button {
+	width: 75px;
+	margin: auto;
+	margin-top: auto;
+	padding: 5px;
+	background-color: #1f54a0;
+	border-color: #2176f1;
+	border-radius: 5px;
+	color: white;
+	font-family: inherit;
+	margin-top: 15px;;
+}
+
+.box button:hover {
+	background-color: #2666bba1;
+	cursor: pointer;
+}
+
+input[type=text], 
+input[type=email],
+input[type=password],
+textarea {
+  font-family: 'Indie Flower', sans-serif;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #2666bb;
+  color: #fff;
+  text-align: center;
+}
+
+
 
 /*.lightbox {
 	zoom: 1.5;
@@ -71,6 +105,7 @@ div.horizontal {
 	margin-top:15px;
 }
 
+
 .slides {
   display: flex;
   overflow-x: auto;
@@ -114,7 +149,7 @@ div.horizontal {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 100px;
+  
 }
 .slides > section:target {
 /*   transform: scale(0.8); */
@@ -192,6 +227,7 @@ div.horizontal {
 			<div class="horizontal">
 				<div class="vertical">
 					<div class="box">
+						<h3> Enter your password! </h3>
 						<input style="text-align: center;" id="password" type="password" placeholder="password" /><button id="loginbutton" type="button">Enter</button>
 						<p id="wrongPassword" style="display: none">wrong password</p>
 					</div>
