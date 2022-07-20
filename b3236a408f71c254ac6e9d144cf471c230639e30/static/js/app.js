@@ -138,4 +138,8 @@ window.addEventListener('load', function() {
 	});
 	audioPlayer.init();
 
+	audioPlayer.getElement().addEventListener('playererror', function(e) {
+		gtag('event', 'playerror', {'method': 'Google'});
+	});
+
 });
