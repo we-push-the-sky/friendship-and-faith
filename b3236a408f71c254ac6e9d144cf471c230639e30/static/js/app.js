@@ -49,7 +49,6 @@ function sliderSlided() {
 
 	} else {
 		audioPlayer.pause();
-		gtag('event', 'pause_audio', {'method': 'Google'});
 	}
 
 	if(isInView('#interactive-img')){
