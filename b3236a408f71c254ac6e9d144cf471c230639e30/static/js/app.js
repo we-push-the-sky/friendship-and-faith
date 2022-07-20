@@ -35,6 +35,7 @@ function sliderSlided() {
 	if(isInView('#video')){
 		video.scrollIntoView(scrollOptions);
 		video.play();
+		gtag('event', 'video_play', {'method': 'Google'});
 
 	} else {
 		video.pause();
@@ -44,8 +45,11 @@ function sliderSlided() {
 	if(isInView('#audio')){
 		audio.scrollIntoView(scrollOptions);
 		audioPlayer.play();
+		gtag('event', 'audio_play', {'method': 'Google'});
+
 	} else {
 		audioPlayer.pause();
+		gtag('event', 'pause_audio', {'method': 'Google'});
 	}
 
 	if(isInView('#interactive-img')){
