@@ -28,6 +28,7 @@ function initGsheet() {
 
                 if (heading.label && heading.label !== "Email" && heading.label !== "Name") {
                     let column = heading.label;
+                    console.log(column)
                     colz.push(column);
                     const th = document.createElement('div');
                     th.innerText = column;
@@ -40,13 +41,14 @@ function initGsheet() {
             jsonData.table.rows.forEach((rowData) => {
                 const row = {};
                 colz.forEach((ele, ind) => {
-                    if(ind+2 != 3){
-                        row[ele] = (rowData.c[ind] != null) ? rowData.c[ind+2].v : '';
+                    console.log(ind, ind+2)
+                    if(ind === 0){
+                        row[ele] = (rowData.c[ind] != null) ? rowData.c[ind].v : '';
                     } else {
-                        row[ele] = (rowData.c[ind] != null) ? rowData.c[ind+2].f : '';  
+                        row[ele] = (rowData.c[ind] != null) ? rowData.c[ind].f : '';  
                     }
                   
-                })
+                });
                 data.push(row);
             });
 
